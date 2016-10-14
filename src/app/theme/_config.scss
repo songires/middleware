@@ -1,0 +1,20 @@
+@import "~react-toolbox/lib/colors";
+
+
+
+$color-primary: $palette-teal-700;
+$color-primary-dark: $palette-teal-900;
+.card{
+	overflow: visible !important;
+}
+
+.button{ 
+ margin-left: auto !important;
+ margin-right: auto !important;
+ }
+
+ .landing{
+ background-color: #fafafa;
+ }
+
+ 

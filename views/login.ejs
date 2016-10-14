@@ -1,0 +1,34 @@
+<html>
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+
+ <script src="https://cdn.auth0.com/js/lock/10.0/lock.min.js"></script>
+    
+  <script type="text/javascript">
+    
+    var tosend = <%- JSON.stringify(tosend) %>;
+    var options = {
+      auth: {
+        redirectUrl: tosend.env.AUTH0_CALLBACK_URL, 
+        responseType: 'code',
+        params: {
+        scope: 'openid name email picture'
+        }
+      },
+      theme:{
+        logo: "https://iu.box.com/shared/static/5qvtllw7adtkklqooma4jnae8ijq147d.png"
+      },
+      languageDictionary:{
+        title: "Omega Weather Forecast"
+      }
+    }
+
+
+    alert(tosend.env.AUTH0_CLIENT_ID);
+
+
+    var lock = new Auth0Lock(tosend.env.AUTH0_CLIENT_ID, tosend.env.AUTH0_DOMAIN , options);
+    lock.show();
+  </script>
+</body>
+</body>
+</html>

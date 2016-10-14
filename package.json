@@ -1,0 +1,50 @@
+{
+  "name": "middleware",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.5.1",
+    "body-parser": "~1.15.1",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.5.2",
+    "express": "~4.13.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "immutability-helper": "^2.0.0",
+    "morgan": "~1.7.0",
+    "node-sass": "^3.10.1",
+    "passport": "^0.3.2",
+    "passport-auth0": "^0.5.2",
+    "range-parser": "^1.2.0",
+    "react": "*",
+    "react-addons-css-transition-group": "*",
+    "react-addons-update": "*",
+    "react-dom": "*",
+    "react-loading": "0.0.9",
+    "react-toolbox": "*",
+    "react-transform-catch-errors": "~1.0.0",
+    "react-transform-hmr": "~1.0.1",
+    "readable-stream": "^2.1.5",
+    "redbox-react": "~1.3.0",
+    "sass-lint": "~1.7.0",
+    "sass-loader": "~4.0.0",
+    "serve-favicon": "~2.3.0",
+    "style-loader": "~0.13.1",
+    "webpack": "*",
+    "webpack-dev-middleware": "*",
+    "webpack-hot-middleware": "*",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0"
+  }
+}

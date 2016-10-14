@@ -1,0 +1,13 @@
+$teal: #00796B;
+$white: #fafafa;
+
+.appBar {
+  background-color: $teal;
+
+  > svg {
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-right: 1rem;
+    fill: $white;
+  }
+}
