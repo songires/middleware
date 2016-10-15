@@ -3,4 +3,7 @@ node_js:
   - "4.4.2"
 script:
   - npm install --silent
-  - mocha
+  - npm test
+cache:
+directories:
+  - node_modules
