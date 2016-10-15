@@ -59,7 +59,7 @@ class DatePickerIn extends React.Component {
     }).then(function(body) {
         locationsArray = {};
 
-       var body1 = JSON.parse(body);
+      var body1 = JSON.parse(body);
       for (var key in body1) {
         if (body1.hasOwnProperty(key)) {
 

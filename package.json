@@ -17,6 +17,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "immutability-helper": "^2.0.0",
     "morgan": "~1.7.0",
+    "node-fetch": "^1.6.3",
     "node-sass": "^3.10.1",
     "passport": "^0.3.2",
     "passport-auth0": "^0.5.2",

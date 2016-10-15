@@ -21,17 +21,32 @@ describe('Application gateway', function() {
 		});
 	});
 
-	it('Should submit date on /home/submit', function(done) {
+	it('Should submit date and time on /home/submit', function(done) {
 
 		//setTimeout(done, 15000);
 		this.timeout(15000);
     			
 		chai.request(server)
 			.post('/home/submit')
-			.send({date: "2000/01/21"})
+			.send({date: "2000/01/21/"})
 			.end(function(err, res){
-			  res.should.have.status(200);
-			  done();
+				res.should.have.status(200);
+			done();
+		});
+	});
+
+
+	it('Should submit final location on /home/submit_loc', function(done) {
+
+		//setTimeout(done, 15000);
+		this.timeout(15000);
+    			
+		chai.request(server)
+			.post('/home/submit_loc')
+			.send({ loc: '2016/09/06/KABR/', timest: '000102' })
+			.end(function(err, res){
+				res.should.have.status(200);
+			done();
 		});
 	});
 });
